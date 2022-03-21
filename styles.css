@@ -1,0 +1,14 @@
+.form-container {
+    display: block;
+    text-align: center;
+}
+
+.form {
+    display: inline-block;
+    width: 50%;
+    height: 20rem;
+}
+
+div.form-row {
+    padding: 10px;
+}
