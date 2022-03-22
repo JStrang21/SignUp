@@ -8,36 +8,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class='form-container'>
-        <form class='form' action='' method='get'>
-            <div class='form-row'>
-                <label for="userFirstName">First Name</label>
-                <input type="text" id='userFirstName' name='userFirstName' required>
+    <div class='outermost'>
+        <div class='left-side'>
+            <div class='image-container'>
+                <image> </image>
             </div>
-            <div class='form-row'>
-                <label for="userLastName">Last Name</label>
-                <input type="text" id='userLastName' name='userLastName' required>
+        </div>
+        <div class='right-side'>
+            <div class='heading'>
+                <h4>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</h4>
+                <h4>You <em>know</em> you want to</h4>
             </div>
-            <div class='form-row'>
-                <label for="userEmail">Email</label>
-                <input type="email" id='userEmail' name='userEmail' placeholder='queef@gmail.com' required>
+            <div class='form-container'>
+                <form class='form' action='' method='get'>
+                    <div class='form-row'>
+                        <label for="userFirstName">First Name</label>
+                        <input type="text" id='userFirstName' name='userFirstName' required>
+                    </div>
+                    <div class='form-row'>
+                        <label for="userLastName">Last Name</label>
+                        <input type="text" id='userLastName' name='userLastName' required>
+                    </div>
+                    <div class='form-row'>
+                        <label for="userEmail">Email</label>
+                        <input type="email" id='userEmail' name='userEmail' placeholder='queef@gmail.com' required>
+                    </div>
+                    <div class='form-row'>
+                        <label for="userPhone">Phone Number</label>
+                        <input type="phone" id='userPhone' name='userPhone' placeholder='(+1)123-456-789' required>
+                    </div>
+                    <div class='form-row'>
+                        <label for="userPass">Password</label>
+                        <input type="password" id='userPass' name='userPass' required>
+                    </div>
+                    <div class='form-row'>
+                        <label for="userPassConfirm">Confirm Password</label>
+                        <input type="password" id='userPassConfirm' name='userPassConfirm' required>
+                    </div>
+                    <div class='form-row'>
+                        <button>Create Account</button>
+                    </div>
+                </form>
             </div>
-            <div class='form-row'>
-                <label for="userPhone">Phone Number</label>
-                <input type="phone" id='userPhone' name='userPhone' placeholder='(+1)123-456-789' required>
-            </div>
-            <div class='form-row'>
-                <label for="userPass">Password</label>
-                <input type="password" id='userPass' name='userPass' required>
-            </div>
-            <div class='form-row'>
-                <label for="userPassConfirm">Confirm Password</label>
-                <input type="password" id='userPassConfirm' name='userPassConfirm' required>
-            </div>
-            <div class='form-row'>
-                <button>Create Account</button>
-            </div>
-        </form>
+        </div>
     </div>
+    <script>
+        const password = document.getElementById('userPass');
+        const passwordConfirm = document.getElementById('userPassConfirm');
+    </script>
 </body>
 </html>
