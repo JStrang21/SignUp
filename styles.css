@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-family: cursive;
+    background-color: ivory;
 }
 
 .outermost {
@@ -19,20 +21,78 @@ html, body {
     padding: 3rem;
 }
 
+.heading {
+    background-color: rgb(247, 247, 218);
+}
+
 .form-container {
     box-shadow: 2px 4px lightgrey;
+}
+
+.image-container {
+    width: auto;
+    height: 100%;
+}
+
+#odin-logo {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#winter-image {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .form {
     display: grid;
     grid-template-columns: 10rem 10rem;
     row-gap: 1rem;
-    column-gap: 3rem;
+    column-gap: 8rem;
     padding: 2rem;
     background-color: darkkhaki;
-    
 }
 
 .left-side {
     background-color: cornsilk;
 }
+
+input:focus {
+    background-color: rgb(188, 226, 245);
+    border: .13rem solid rgb(188, 226, 245);
+    box-shadow: 1px 2.5px lightgrey;
+}
+
+input:valid {
+    border: .13rem solid rgb(26, 160, 26);
+    border-radius: 3px;
+}
+
+input:invalid {
+    border: .13rem solid rgb(248, 106, 106);
+    border-radius: 3px;
+}
+
+button {
+    background-color: rgb(214, 212, 212);
+    color: ivory;
+    border: .13rem solid rgb(175, 173, 173);
+    border-radius: .5rem;
+    height: 2rem;
+    width: 10rem;
+}
+
+button:hover {
+    background-color: lightgreen;
+    border: .13rem solid snow;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 10rem;
+}
+
