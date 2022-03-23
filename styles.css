@@ -19,14 +19,18 @@ html, body {
     justify-content: center;
     gap: 1rem;
     padding: 3rem;
+    background-color: #5a92af;
 }
 
 .heading {
-    background-color: rgb(247, 247, 218);
+    background-color: #86c1d4;
+    box-shadow: 2px 4px #9cd9de;
 }
 
 .form-container {
-    box-shadow: 2px 4px lightgrey;
+    box-shadow: 2px 4px #9cd9de;
+    width: auto;
+    height: auto;
 }
 
 .image-container {
@@ -56,7 +60,7 @@ html, body {
     row-gap: 1rem;
     column-gap: 8rem;
     padding: 2rem;
-    background-color: darkkhaki;
+    background-color: #d9f9f4;
 }
 
 .left-side {
