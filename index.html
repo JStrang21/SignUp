@@ -46,7 +46,7 @@
                         <label for="userPassConfirm">Confirm Password</label>
                         <input type="password" id='userPassConfirm' name='userPassConfirm' required>
                     </div>
-                    <button>Create Account</button>
+                    <button id='button'>Create Account</button>
                 </form>
             </div>
             
@@ -56,6 +56,15 @@
     <script>
         const password = document.getElementById('userPass');
         const passwordConfirm = document.getElementById('userPassConfirm');
+        const button = document.getElementById('button');
+
+        
+        button.addEventListener('mouseenter',() => {
+            if(password.value !== passwordConfirm.value) {
+                alert('Passwords Do Not Match')
+            }
+            else {console.log('Good')}
+        })
     </script>
 </body>
 </html>
